@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Shop</title>
+        <meta name="description" content="print on demand shops">
+        
+        <!--fonturi:------------------------------------------------------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <style>
+            html, body {
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Montserrat', sans-serif; 
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 83%;
+                max-width: 1600px;
+                margin-left: auto;
+                margin-right: auto;
+                /*border: solid 2px red;*/
+            }
+          
+            /* -----Header: Nav bar & Logo ----*/
+    header {
+        background-color: #fadcd0;
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        font-size: 1.3rem;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        width: 10rem;
+        margin-left: 2.5rem;
+        margin-top: .25rem;
+    }
+    .top-nav {
+        display: flex
+    }
+    .top-nav li {
+        list-style-type: none; 
+    }
+    .top-nav li {
+        margin-right: 2.5rem;
+    }
+   
+    .submenu {
+        position:absolute;
+        display: none;
+    }
+    .portfolio-item {
+        cursor: pointer;
+        color: #434369;
+    }
+    .portfolio-item:hover >.submenu {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items:flex-start;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .submenu-item {
+       margin: .5rem 0;
+       background-color: #fadcd0d5;
+       padding: .31rem 1rem;
+       border-radius: 10%;
+}
+    .submenu li:first-child {
+       margin-top: 1.562rem;
+       margin-bottom: .12rem;
+    }
+    .submenu li:last-child {
+        margin-top: .18rem;
+    }
+    a:link {
+        text-decoration: none;
+        color: #434369;
+    }
+
+    a:visited {
+        color:#76b3ab;
+    }
+
+    a:hover {
+        color:#df6f71;
+        text-decoration: underline;
+    }
+    
+
+    /* --End of Header: Nav bar & Logo --*/
+
+
+            /*----START of SECTION 1---------------------------------------------------*/
+            .bckgr-img {
+                background-color: #f5ebe7;
+            }
+
+            .heading-shop-page {
+                width: 100%;
+                text-align: center;
+                /*border: 2px solid blue;*/
+                padding: 3rem 0;
+           }
+           .heading-shop-page h2 {
+                font-size: 2rem;
+                font-family:'Abril Fatface', cursive;
+                font-weight: normal;
+                word-spacing: 0.3rem;
+                letter-spacing: 0.125rem;
+                margin-top: 0;
+                color: #434369;
+                /*border: solid 2px peru;*/
+           }
+
+           .heading-shop-page p {
+                font-size: 1.25rem;    
+                line-height: 1.8rem;
+                font-weight: 600;
+                color: #434369;
+                /*border: solid 2px peru;*/
+           }
+
+            .POD-stores {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 3%;
+                /*border: solid 2px mediumorchid;*/
+            }
+            .POD-stores img {
+                width: 75%;
+            }
+           
+            .SF {
+                padding: 6px 0;
+                border-radius: 30px;
+                margin: 0px 5px;
+                background: linear-gradient(to bottom, #fcf0f0, #f7bbbc);
+            }
+            .RB {
+                padding: 9px 0;
+                border-radius: 30px;
+                margin: 0px 5px;
+                background: linear-gradient(to bottom, #fcf0f0, #f7bbbc);
+            }
+            .S6 {
+                padding: 4px 0;
+                border-radius: 30px;
+                margin: 0px 5px;
+                background: linear-gradient(to bottom, #fcf0f0, #f7bbbc);
+            }
+            .POD-stores >a:hover {
+                background: linear-gradient(to bottom, #fcf0f0, #b6d8d3);
+            }
+            
+            .produse {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content:space-evenly;
+                gap: 4rem;
+                border-top: 1px solid rgba(212, 212, 208, 0.753);
+                padding: 3rem 6rem;
+            }
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                border-radius: 5px;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 1px 12px 5px -5px rgba(0,0,0,0.27);
+                padding: 2em 0;
+                text-align: center;
+                /*border: 2px solid blue;*/
+            }
+            .card >p {
+                font-size: 1rem;    
+                line-height: .8rem;
+                font-weight: 600;
+                color: #434369;
+                margin: .31rem .31rem;
+                /*border: solid yellow 2px;*/
+                
+            }
+            .gal {
+                width: 80%;
+                transition: .7s ease-in-out;
+                /*border: 2px red solid;*/
+            }
+            a:hover >.gal {
+                width: 90%;
+            }
+            /*.card a img {
+                margin: 10px;
+                max-width: 300px;
+                transition: 1s ease-in-out;
+            }
+            .card a img:hover {
+                max-width: 400px;
+            }*/
+            /*----END of SECTION 1---------------------------------------------------*/
+
+            /*-----Start of Footer----------------------------------------------------*/
+ 
+footer {
+    background-color: #fadcd0;
+    padding: 1rem 0;
+}
+.bottom-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo_2 {
+    width: 10rem;
+    margin: 0;
+}
+.social-media {
+    margin: .5rem;
+    padding: 0;
+}
+.social-media li {
+    list-style: none;
+    display: inline-block;
+}
+.social-media li a {
+    color: white;
+}
+.fa {
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    width: 3rem;
+    text-align: center;
+    text-decoration: none;
+    margin: .3rem .125rem;
+    border-radius: 1rem;
+    background: #f5969c;
+    color: white;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+footer p {
+    font-size: 1.25rem;    
+    font-weight: 600;
+    color: #434369;
+    margin: 0;
+}
+
+/*-----End of Footer----------------------------------------------------*/
+          
+
+
+        </style>
+
+    </head>
+
+
+    <body>
+        <!--Logo & Navigation bar-------------------------------------------------------->
+        <header class="container row">
+            <a href="index.html"><img class="logo" src="logo.svg"></a>
+          
+            <nav>
+                <ul class="top-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="portfolio-item"><a href="portofoliu.html">Portfolio</a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="patterns.html">Patterns</a></li>
+                                <li class="submenu-item"><a href="illustrations.html">Illustrations</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="index.html #section-4">About</a></li>
+                    <li><a href="index.html #section-5">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--END Logo & Navigation bar------------------------------------------------------>
+
+        <!--SECTIUNEA 1 ---------------------------------------------------------------------->
+    <section class="container">
+        <div class="bckgr-img">
+
+            <div class="galerie-shop">
+
+                <div class="heading-shop-page">
+                     <h2>My Shop</h2>
+                     <p>Orders are fulfilled by the following online stores:</p>
+                    
+
+                    <div class="POD-stores">
+                        <a class="SF" href="https://www.spoonflower.com/profiles/dorademe" target="_blank"><img src="imagini/sigla-spoonflower3.png" alt=""></a>
+                        <a class="RB" href="https://www.redbubble.com/people/DoraDeme" target="_blank"><img src="imagini/sigla-redbubble3.png" alt=""></a>
+                        <a class="S6" href="https://society6.com/dorademeart" target="_blank"><img src="imagini/sigla-society63.png" alt=""></a>
+                    </div>
+                  
+                    <p>Below you can find my best selling designs.</p>
+
+                </div>
+
+                <div class="produse">
+
+                    <div class="card" >
+                        <a href="https://www.redbubble.com/i/apron/Japanese-indigo-shibori-design-by-DoraDeme/74191997.6ZXWR"><img class="gal" src="produse/produs7.png" alt=""></a>
+                        <p>"Japanese Indigo Shibori Design"</p>
+                        <p>Apron</p>
+                        <p>25.79 $</p>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://www.spoonflower.com/en/home-decor/bedding/euro-pillow-sham/10585549-colorful-tiles-by-dorademe"><img class="gal" src="produse/produs8.png" alt=""></a>
+                        <p>"Colorful Tiles"</p>
+                        <p>Euro Pillow Sham</p>
+                        <p>35.20 $</p>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://society6.com/product/composition1146106_cards?sku=s6-8786600p22a16v71"><img class="gal" src="produse/produs9.png" alt=""></a>
+                        <p>"Composition"</p>
+                        <p>Stationery Cards</p>
+                        <p>11.19 $</p>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="https://www.redbubble.com/i/iphone-skin/Tropical-leaves-in-light-colors-by-DoraDeme/40600744.62NBT?asc=u"><img class="gal" src="produse/produs2.png" alt=""></a>
+                        <p>"Tropical Leaves in Light Colors"</p>
+                        <p>iPhone Skin</p>
+                        <p>19.76 $</p>
+                        
+                    </div>
+
+                    <div class="card" >
+                        <a href="https://www.spoonflower.com/en/home-decor/living-decor/square-throw-pillow/8799551-green-tropical-leaves-by-dorademe"><img class="gal" src="produse/produs1.png" alt=""></a>
+                        <p>"Green Tropical Leaves"</p>
+                        <p>Square Throw Pillow Cover</p>
+                        <p>31.20 $</p>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://www.spoonflower.com/en/fabric/7319871-autumn-equinox-2-large-scale-by-dorademe"><img class="gal" src="produse/produs3.png" alt=""></a>
+                        <p>"Autumn Equinox 2 -large scale"</p>
+                        <p>Fabric</p>
+                        <p>9.60 $</p>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://www.spoonflower.com/en/fabric/11387755-floral-mandalas-on-green-by-dorademe"><img class="gal" src="produse/produs4.png" alt=""></a>
+                        <p>"Floral Mandalas on Green"</p>
+                        <p>Fabric</p>
+                        <p>9.60 $</p>
+                    </div>
+
+                    <div class="card" >
+                        <a href="https://society6.com/product/red-hair-girl5637164_print?sku=s6-21279804p4a1v45"><img class="gal" src="produse/produs5.png" alt=""></a>
+                        <p>"Red Hair Girl"</p>
+                        <p>Art Print</p>
+                        <p>15.19 $</p>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://www.spoonflower.com/en/wallpaper/8966087?fabric=wallpaper_isobar"><img class="gal" src="produse/produs6.png" alt=""></a>
+                        <p>"Portuguese Tiles"</p>
+                        <p>Wallpaper</p>
+                        <p>184.00 $</p>
+                    </div>
+                   
+                </div>
+            </div>
+
+
+           
+
+
+
+
+        </div>
+    </section>
+
+        <!--Start of Footer-------------------------------------------------------------->
+        <footer class="container">
+            <div class="bottom-nav">
+                <a href="index.html"><img class="logo_2" src="logo.svg"></a>
+                <p>Follow me:</p>
+                <ul class="social-media">
+                    <li><a href="https://www.instagram.com/dorademe/" class="fa fa-instagram"></a></li>
+                    <li><a href="https://ro.pinterest.com/teodorademe" class="fa fa-pinterest"></a></li>
+                    <li><a href="https://www.facebook.com/deme.teodora" class="fa fa-facebook"></a></li> 
+                </ul>
+                <p class="copyright">COPYRIGHT &copy;  2021 Dora Deme Design</p>
+            </div>
+    </footer>
+    <!--End of Footer----------------------------------------------------------------->
+       
+    </body>
+</html>

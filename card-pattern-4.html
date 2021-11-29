@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+      
+        <!--fonturi:------------------------------------------------------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>  
+             html, body {
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Montserrat', sans-serif; 
+                box-sizing: border-box;
+            }
+            .container {
+                width: 83%;
+                max-width: 1600px;
+                margin-left: auto;
+                margin-right: auto;
+                /*border: solid 2px red;*/
+            }
+                /* -----Header: Nav bar & Logo ----*/
+            header {
+                background-color: #fadcd0;
+                padding-top: .2rem;
+                padding-bottom: .2rem;
+                position: sticky;
+                top: 0;
+                z-index: 999;
+                font-size: 1.3rem; 
+            }
+            .row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .logo {
+                width: 10rem;
+                margin-left: 2.5rem;
+                margin-top: .25rem;
+            }
+            .top-nav {
+                display: flex
+            }
+            .top-nav li {
+                list-style-type: none; 
+            }
+            .top-nav li {
+                margin-right: 2.5rem;
+            }
+   
+            .submenu {
+                position:absolute;
+                display: none;
+            }
+            .portfolio-item {
+                cursor: pointer;
+                color: #434369;
+            }
+            .portfolio-item:hover >.submenu {
+                display: flex;
+                flex-direction: column;
+                justify-content:space-around;
+                align-items:flex-start;
+                padding-left: 0;
+                margin-left: 0;
+            }
+            .submenu-item {
+            margin: .5rem 0;
+            background-color: #fadcd0d5;
+            padding: .31rem 1rem;
+            border-radius: 10%;
+            }
+            .submenu li:first-child {
+            margin-top: 1.562rem;
+            margin-bottom: .12rem;
+            }
+            .submenu li:last-child {
+                margin-top: .18rem;
+            }
+            a:link {
+                text-decoration: none;
+                color: #434369;
+            }
+
+            a:visited {
+                color:#76b3ab;
+            }
+
+            a:hover {
+                color:#df6f71;
+                text-decoration: underline;
+            }
+    
+
+            /* --End of Header: Nav bar & Logo --*/ 
+
+            /*---START SECTIUNE 1---------------------------------------------------*/
+            
+            .pagina {
+                display: flex;
+                gap: 4rem;
+                justify-content: center;
+                align-items:flex-start;
+                background-color:#f5ebe7 ;
+                padding: 5rem 0;
+                /*border: solid green 2px;*/
+            }
+            .col-stanga {
+                width: 30%;
+                text-align: right;
+                margin-left: .5em;
+            }
+            .col-stanga img{
+                width: 80%;
+                border-radius: .4rem;  
+                /*border: solid #faf7f6 .8rem;*/
+            }
+            .col-dreapta {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                text-align: center;
+                /*border: solid 2px orangered;*/
+            }
+            .text {
+                width: 70%;
+                text-align: center;
+            }
+            .text h2 {
+                font-size: 2rem;
+                font-family:'Abril Fatface', cursive;
+                font-weight: normal;
+                word-spacing: 0.3rem;
+                margin: 0;
+                color: #434369;
+                /*border: solid 2px peru;*/
+            }
+            .highlight {
+                background-image: linear-gradient(to right, transparent 30%, #76b3ab65 80%); 
+                background-size: 200% 55%;
+                background-repeat: repeat-x;
+                background-position: -100% 100%;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+
+            .text p {
+                font-size: 1.25rem;    
+                line-height: 1.8rem;
+                font-weight: 600;
+                color: #434369;
+                margin-bottom: 0;
+                /*border: solid 2px peru;*/
+            }
+             
+            .col-dreapta a >img {
+                max-width: 80%;
+                border-radius: 6px;
+                box-shadow: 1px 12px 5px -5px rgba(0,0,0,0.27);
+                transition: .5s ease-in-out;
+
+            }
+            .col-dreapta a >img:hover {
+                max-width: 90%;
+            }
+           .arrows {
+               display: flex;
+           }
+            .arrow_st, .arrow_dr {
+                width: 2.5rem;
+            }
+           
+            
+            /*---END  SECTIUNE 1---------------------------------------------------*/
+
+            /*-----Start of Footer----------------------------------------------------*/
+ 
+            footer {
+                background-color: #fadcd0;
+                padding: 1rem 0;
+            }
+            .bottom-nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .logo_2 {
+                width: 10rem;
+                margin: 0;
+            }
+            .social-media {
+                margin: .5rem;
+                padding: 0;
+            }
+            .social-media li {
+                list-style: none;
+                display: inline-block;
+            }
+            .social-media li a {
+                color: white;
+            }
+            .fa {
+                padding: 1.25rem;
+                font-size: 1.5rem;
+                width: 3rem;
+                text-align: center;
+                text-decoration: none;
+                margin: .3rem .125rem;
+                border-radius: 1rem;
+                background: #f5969c;
+                color: white;
+                -webkit-border-radius: 1rem;
+                -moz-border-radius: 1rem;
+                -ms-border-radius: 1rem;
+                -o-border-radius: 1rem;
+            }
+            .fa:hover {
+                opacity: 0.7;
+                text-decoration: none;
+            }
+            footer p {
+                font-size: 1.25rem;    
+                font-weight: 600;
+                color: #434369;
+                margin: 0;
+            }
+            /*-----End of Footer----------------------------------------------------*/
+           
+        </style>
+        
+    </head>
+    
+    <body>
+        <body>
+            <!--Logo & Navigation bar-------------------------------------------------------->
+            <header class="container row">
+                <a href="index.html"><img class="logo" src="logo.svg"></a>
+              
+                <nav>
+                    <ul class="top-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="portfolio-item"><a href="portofoliu.html">Portfolio</a>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a href="patterns.html">Patterns</a></li>
+                                    <li class="submenu-item"><a href="illustrations.html">Illustrations</a></li>
+                                </ul>
+                        </li>
+                        <li><a href="Shop.html">Shop</a></li>
+                        <li><a href="index.html #section-4">About</a></li>
+                        <li><a href="index.html #section-5">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--END Logo & Navigation bar------------------------------------------------------>
+
+           <!---START Galerie-------------------------------------------------------------->
+            <section class="container pagina">
+
+                <div class="col-stanga">
+                    <img src="imagini/patt_4.jpg" alt="">
+                </div>
+
+                <div class="col-dreapta">
+
+                    <div class="text">
+                        <h2><span class="highlight"> Floral Seamless Pattern</span></h2>
+                        <p>Abstract vector seamless pattern design in shades of mint green and blue.<br>It is available as Fabric & Home Decor in my Spoonflower shop:</p>
+                    </div>
+
+                    <a href="https://www.spoonflower.com/en/fabric/11761761-abstract-nature-green-blue-by-dorademe"><img src="imagini/patt_4a.jpg" alt=""></a>
+                    <a href="https://www.spoonflower.com/en/home-decor/bedding/euro-pillow-sham/11761761-abstract-nature-green-blue-by-dorademe"><img src="imagini/patt_4b.jpg" alt=""></a>
+                    
+                    <div class="arrows">
+                        <a href="card-pattern-3.html"><img class="arrow_st" src="imagini/arrow_stanga.svg"></a>
+                        <a href="card-pattern-5.html"><img class="arrow_dr" src="imagini/arrow_dreapta.svg"></a>
+                    </div>
+                </div>
+
+            </section>        
+
+
+           <!---END Galerie-------------------------------------------------------------->
+
+           <!--Start of Footer-------------------------------------------------------------->
+        <footer class="container">
+            <div class="bottom-nav">
+                <a href="index.html"><img class="logo_2" src="logo.svg"></a>
+                <p>Follow me:</p>
+                <ul class="social-media">
+                    <li><a href="https://www.instagram.com/dorademe/" class="fa fa-instagram"></a></li>
+                    <li><a href="https://ro.pinterest.com/teodorademe" class="fa fa-pinterest"></a></li>
+                    <li><a href="https://www.facebook.com/deme.teodora" class="fa fa-facebook"></a></li> 
+                </ul>
+                <p class="copyright">COPYRIGHT &copy;  2021 Dora Deme Design</p>
+            </div>
+    </footer>
+    <!--End of Footer----------------------------------------------------------------->
+
+
+
+
+    </body>
+</html>

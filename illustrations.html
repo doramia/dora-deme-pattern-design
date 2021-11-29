@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Illustrations</title>
+        <meta name="description" content="recent illustrations">
+        
+        <link rel="stylesheet" href="style.css">
+        <!--fonturi:------------------------------------------------------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            html, body {
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Montserrat', sans-serif; 
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 83%;
+                max-width: 1600px;
+                margin-left: auto;
+                margin-right: auto;
+                /*border: solid 2px red;*/
+            }
+                    /* -----Header: Nav bar & Logo ----*/
+            header {
+                background-color: #fadcd0;
+                padding-top: .2rem;
+                padding-bottom: .2rem;
+                position: sticky;
+                top: 0;
+                z-index: 999;
+                font-size: 1.3rem;
+            }
+            .row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .logo {
+                width: 10rem;
+                margin-left: 2.5rem;
+                margin-top: .25rem;
+            }
+            .top-nav {
+                display: flex
+            }
+            .top-nav li {
+                list-style-type: none; 
+            }
+            .top-nav li {
+                margin-right: 2.5rem;
+            }
+        
+            .submenu {
+                position:absolute;
+                display: none;
+            }
+            .portfolio-item {
+                cursor: pointer;
+                color: #434369;
+            }
+            .portfolio-item:hover >.submenu {
+                display: flex;
+                flex-direction: column;
+                justify-content:space-around;
+                align-items:flex-start;
+                padding-left: 0;
+                margin-left: 0;
+            }
+            .submenu-item {
+            margin: .5rem 0;
+            background-color: #fadcd0d5;
+            padding: .31rem 1rem;
+            border-radius: 10%;
+            }
+            .submenu li:first-child {
+            margin-top: 1.562rem;
+            margin-bottom: .12rem;
+            }
+            .submenu li:last-child {
+                margin-top: .18rem;
+            }
+            a:link {
+                text-decoration: none;
+                color: #434369;
+            }
+
+            a:visited {
+                color:#76b3ab;
+            }
+
+            a:hover {
+                color:#df6f71;
+                text-decoration: underline;
+            }
+            /* --End of Header: Nav bar & Logo --*/
+            
+           /*poza background intermediara 1*/
+           .bckgr-img {
+                background-image: url("imagini/acuarela2.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                padding: 8rem 0;
+            } 
+
+            .titlu_text h2 {
+                font-size: 2rem;
+                font-family:'Abril Fatface', cursive;
+                font-weight: normal;
+                word-spacing: 0.3rem;
+                letter-spacing: 0.125rem;
+                margin-top: 0;
+                color: #434369;
+                /*border: solid 2px peru;*/
+            }
+
+            .titlu_text p {
+                font-size: 1.25rem;    
+                line-height: 1.5rem;
+                font-weight: 600;
+                color: #434369;
+                /*border: solid 2px peru;*/
+            }
+            .titlu_text {
+                width: 40%;
+                max-width: 500px;
+                background-color: #fadcd0dc;
+                margin: 0 auto;
+                border-radius: .5rem; 
+                text-align: left;
+                padding: 2em .3em 1.5em 2.5em;
+                /*border: solid rgb(13, 129, 71) 2px;*/
+               
+            }
+            
+            .poze {
+                background-color: #f5ebe7;
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content:space-evenly;
+                gap: 5rem;
+                /*border: solid 2px rgb(107, 65, 185);*/
+                text-align: center;
+                padding: 4rem 0;
+            }
+
+           /*---Start Foldable cards--------------------------------------------------*/
+
+           .card {
+                position: relative;
+                width: 21rem;
+                height: 21rem;
+                background-color: #040429;
+                transform-style: preserve-3d;
+                transform: perspective(1000px);
+                box-shadow: 10px 20px 40px rgba(19, 23, 61, 0.25);
+                transition: 1s;
+   
+            }
+            .card:hover {
+                transform: translateX(50%);
+                width: 46rem;
+                height: 46rem;
+                z-index: 99;
+            }
+            .card:nth-child(3n+0):hover {
+                transform: translateX(-8%);
+                width: 46rem;
+                height: 46rem;
+                z-index: 99;
+            }
+            .card:first-child:hover {
+                transform: translateX(108%);
+                width: 46rem;
+                height: 46rem;
+                z-index: 99;
+            }
+            
+            .card:nth-child(3n+4):hover {
+                transform: translateX(108%);
+                width: 46rem;
+                height: 46rem;
+                z-index: 99;
+            }
+            
+            .card .imgBox {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                transform-origin: left;
+                transform-style: preserve-3d;
+                background: #000;
+                transition: 1s;
+                box-shadow: 10px 20px 40px rgba(0,0,0,0.25);
+               
+            }
+
+            .card .imgBox img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform-style: preserve-3d;
+                backface-visibility: hidden;
+            }
+            .card .imgBox img:nth-child(2) {
+                transform: rotateY(180deg);
+            }
+
+            .card .details {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            video {
+                padding-right: 2.2em;
+                padding-bottom: 2.2em;
+            }
+            .card .details .content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .card .details .content h2 {
+                font-size: 1.5rem;
+                font-family:'Abril Fatface', cursive;
+                font-weight: normal;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #fce0e0;
+                padding-right: 1em;
+                
+            }
+            .card .details .content p {
+                font-size: 1.25rem;    
+                line-height: 1.5rem;
+                font-weight: 400;
+                color: #fce0e0;
+                padding-right: 2em;
+            }
+
+
+
+            .card:hover .imgBox {
+                transform: rotateY(-180deg);
+            }
+
+            /*---End of Foldable cards-------------------------------------------------*/
+
+            /*-----Start of Footer----------------------------------------------------*/
+            
+            footer {
+                background-color: #fadcd0;
+                padding: 1rem 0;
+            }
+            .bottom-nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .logo_2 {
+                width: 10rem;
+                margin: 0;
+            }
+            .social-media {
+                margin: .5rem;
+                padding: 0;
+            }
+            .social-media li {
+                list-style: none;
+                display: inline-block;
+            }
+            .social-media li a {
+                color: white;
+            }
+            .fa {
+                padding: 1.25rem;
+                font-size: 1.5rem;
+                width: 3rem;
+                text-align: center;
+                text-decoration: none;
+                margin: .3rem .125rem;
+                border-radius: 1rem;
+                background: #f5969c;
+                color: white;
+                -webkit-border-radius: 1rem;
+                -moz-border-radius: 1rem;
+                -ms-border-radius: 1rem;
+                -o-border-radius: 1rem;
+            }
+            .fa:hover {
+                opacity: 0.7;
+                text-decoration: none;
+            }
+            footer p {
+                font-size: 1.25rem;    
+                font-weight: 600;
+                color: #434369;
+                margin: 0;
+            }
+
+            /*-----End of Footer----------------------------------------------------*/
+
+        </style>
+
+    </head>
+
+
+
+    <body>
+        <!--Logo & Navigation bar-------------------------------------------------------->
+        <header class="container row">
+            <a href="index.html"><img class="logo" src="logo.svg"></a>
+          
+            <nav>
+                <ul class="top-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="portfolio-item"><a href="portofoliu.html">Portfolio</a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="patterns.html">Patterns</a></li>
+                                <li class="submenu-item"><a href="illustrations.html">Illustrations</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="index.html #section-4">About</a></li>
+                    <li><a href="index.html #section-5">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--END Logo & Navigation bar------------------------------------------------------>
+
+        <!--SECTIUNEA 1 --------------------------------------------------------------->
+        <section class="container">
+
+            <div class="bckgr-img">
+
+                <div class="titlu_text">
+                    <h2>Illustrations</h2>
+                    <p>Most of my illustrations are made digitally, using Procreate app and Photoshop.<br><br>
+                        However, from time to time, i love getting my hands messy, with watercolors and acrylic paints.</p>
+                </div>
+
+            </div>
+
+        </section>
+        <!--END SECTIUNEA 1---------------------------------------------------------------->
+
+        <!--SECTIUNEA 2 --------------------------------------------------------------->
+
+        <section class="container">
+
+            <div class="poze">
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/turban.jpg">
+                        <img src="ilustratii/turban2.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>Nume Ilustratie</h2>
+                            <p>Cateva cuvinte despre making of kjjkj ksnskj hhsd kj hhihiuhidshc hcshc sdahsh jfsdnd.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/flori-negru.jpg">
+                        <img src="ilustratii/flori-negru_2.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>Nume Ilustratie</h2>
+                            <p>-cateva cuvinte despre making of-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/vaza-mint.jpg">
+                        <img src="ilustratii/vaza-mint_2.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>Nume Ilustratie</h2>
+                            <p>-cateva cuvinte despre making of-</p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/vaza-negru.jpg">
+                        <img src="ilustratii/vaza-negru_2.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>Nume Ilustratie</h2>
+                            <p>-cateva cuvinte despre making of-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/carmen.jpg">
+                        <img src="ilustratii/carmen_2.jpg">
+                    </div>
+                    <div class="details">
+                        <!--<div class="content">-->
+                            <video controls width="325">
+                                <source src="video/carmen-video.mp4"
+                                        type="video/mp4">
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        <!--</div>-->
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/ochelari-portocaliu.jpg">
+                        <img src="ilustratii/ochelari-portocaliu_2.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>Nume Ilustratie</h2>
+                            <p>-cateva cuvinte despre making of-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/ochelari-albastru.jpg">
+                        <img src="ilustratii/ochelari-albastru_2.jpg">
+                    </div>
+                    <div class="details">
+                        <!--<div class="content">-->
+                            <video controls width="325">
+                                <source src="video/ochelari-albastri-video.mp4"
+                                        type="video/mp4">
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        <!--</div>-->
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/vaza-negru2.jpg">
+                        <img src="ilustratii/vaza-negru2_2.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>Nume Ilustratie</h2>
+                            <p>-cateva cuvinte despre making of-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/tarancuta.jpg">
+                        <img src="ilustratii/tarancuta_2.jpg">
+                    </div>
+                    <div class="details">
+                        <!--<div class="content">-->
+                            <video controls width="325">
+                                <source src="video/Tarancuta-video.mp4"
+                                        type="video/mp4">
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        <!--</div>-->
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/bruneta.jpg">
+                        <img src="ilustratii/bruneta.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>Nume Ilustratie</h2>
+                            <p>-cateva cuvinte despre making of-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/marble.jpg">
+                        <img src="ilustratii/marble_2.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>Nume Ilustratie</h2>
+                            <p>-cateva cuvinte despre making of-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/Filo.jpg">
+                        <img src="ilustratii/Filo.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>Nume Ilustratie</h2>
+                            <p>-cateva cuvinte despre making of-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/tort.jpg">
+                        <img src="ilustratii/tort_2.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>Nume Ilustratie</h2>
+                            <p>-cateva cuvinte despre making of-</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/fata-imaginatie.jpg">
+                        <img src="ilustratii/fata-imaginatie.jpg">
+                    </div>
+                    <div class="details">
+                        <!--<div class="content">-->
+                            <video controls width="325">
+                                <source src="video/Fata-imaginatie-video.mp4"
+                                        type="video/mp4">
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        <!--</div>-->
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <div class="imgBox">
+                        <img src="ilustratii/Tasi.jpg">
+                        <img src="ilustratii/Tasi.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>Nume Ilustratie</h2>
+                            <p>-cateva cuvinte despre making of-</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>  
+        <!-----END SECTIUNEA 2 --------------------------------------------------------------->
+
+        <!--Start of Footer-------------------------------------------------------------->
+        <footer class="container">
+            <div class="bottom-nav">
+                <a href="index.html"><img class="logo_2" src="logo.svg"></a>
+                <p>Follow me:</p>
+                <ul class="social-media">
+                    <li><a href="https://www.instagram.com/dorademe/" class="fa fa-instagram"></a></li>
+                    <li><a href="https://ro.pinterest.com/teodorademe" class="fa fa-pinterest"></a></li>
+                    <li><a href="https://www.facebook.com/deme.teodora" class="fa fa-facebook"></a></li> 
+                </ul>
+                <p class="copyright">COPYRIGHT &copy;  2021 Dora Deme Design</p>
+            </div>
+    </footer>
+    <!--End of Footer----------------------------------------------------------------->  
+      
+    </body>
+</html>
+

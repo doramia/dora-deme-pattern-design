@@ -1,0 +1,711 @@
+    html, body {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Montserrat', sans-serif; 
+        box-sizing: border-box;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* -----Header: Nav bar & Logo ----*/
+    header {
+        background-color: #fadcd0;
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        font-size: 1.3rem;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        width: 10rem;
+        margin-left: 2.5rem;
+        margin-top: .25rem;
+    }
+    .top-nav {
+        display: flex
+    }
+    .top-nav li {
+        list-style-type: none; 
+    }
+    .top-nav li {
+        margin-right: 2.5rem;
+    }
+   
+    .submenu {
+        position:absolute;
+        display: none;
+    }
+    .portfolio-item {
+        cursor: pointer;
+        color: #434369;
+    }
+    .portfolio-item:hover >.submenu {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items:flex-start;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .submenu-item {
+       margin: .5rem 0;
+       background-color: #fadcd0d5;
+       padding: .31rem 1rem;
+       border-radius: 10%;
+}
+    .submenu li:first-child {
+       margin-top: 1.562rem;
+       margin-bottom: .12rem;
+    }
+    .submenu li:last-child {
+        margin-top: .18rem;
+    }
+    a:link {
+        text-decoration: none;
+        color: #434369;
+    }
+
+    a:visited {
+        color:#76b3ab;
+    }
+
+    a:hover {
+        color:#df6f71;
+        text-decoration: underline;
+    }
+    
+
+    /* --End of Header: Nav bar & Logo --*/
+
+    /*------SECTIUNEA 1 ----------------------------*/
+
+
+    .container {
+        width: 83%;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        /*border: solid 2px red;*/
+       
+    }
+    /*----Main heading & CTA-----------*/
+
+    #main-heading-and-cta {
+        background-image: url("imagini/poza_pat5.jpg");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 3rem 0;
+        /*border: solid 2px rgb(14, 139, 66);*/
+    }
+    .patrat-transparent {
+        /*width: 500px;
+        height: 500px;*/
+        width: 40%;
+        max-width: 600px;
+        border-radius: 10px;    
+        background-color: #fadcd0dc;
+        margin: 100px auto;
+        /*border: 3px solid #ee4806b2;*/
+        padding: 0.8em 0.8em;
+    }
+    .cta-text {
+        color:#434369;
+        text-align: left;
+        padding: 2.5em 2.5em;
+        padding-top: 1.2em;
+        /*border: solid 2px blue;*/
+    }
+
+    .cta-text h1 {
+        font-size: 2.25rem;
+        font-family:'Abril Fatface', cursive;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #434369;
+        text-align: left;
+        /*border: 2px green solid;*/
+    }
+    .cta-text h2 {
+        font-size: 1.25rem;
+        line-height:1.8rem;
+        text-align:left;
+        padding-bottom: 1.5em;
+        padding-top: 1em;
+        margin: 0;
+        color: #434369;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        /*border: solid 2px green;*/
+    }
+
+    
+    .btn {
+        border: none;
+        padding: 1em 2em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        background: #df6f71;
+        border-radius: 1.5em;
+        width: 14rem;
+        -webkit-border-radius: 1.5em;
+        -moz-border-radius: 1.5em;
+        -ms-border-radius: 1.5em;
+        -o-border-radius: 1.5em;
+        /*border: 2px solid peru;*/
+}         
+    .btn:hover {
+        background: linear-gradient(to bottom, #fcdcdc, #df6f71);
+    }
+    .btn >a {
+        text-decoration: none;
+        color: #faeff2;
+    }
+    .btn:hover >a {
+        color: #434369;
+    }
+
+    /*--End of Main heading & CTA-----*/
+/*--End SECTIUNEA 1--------------------------------------*/
+
+/*-----SECTIUNEA 2---------------------------------------*/
+    
+    .featured {
+        
+        background-color: #f5ebe7;
+        background-image: url(imagini/bandasup.png),
+                        url(imagini/bandainf.png);
+        background-position: top, bottom;
+        background-repeat: no-repeat;
+        /*border: solid green 4px;*/
+        padding: 4em 0 2em;
+    }
+
+    .titlu-featured-art {    
+           width: 50%;
+           max-width: 400px;;
+            text-align: center;
+            /*border: solid 2px peru;*/
+            margin: 0 auto;
+            padding-bottom: .5em;
+        }
+
+        .titlu-featured-art h2{
+            font-size: 2rem;
+            font-family:'Abril Fatface', cursive;
+            font-weight: normal;
+            word-spacing: 0.3rem;
+            letter-spacing: 0.125rem;
+            color: #434369;
+            /*border: solid 2px peru;*/
+        }
+
+      .rand-poze {
+        text-align: center;
+        /*border: solid blue 2px;*/
+
+    }
+    
+    .featured_img {
+        width: 21%;
+        display: inline-block;
+        border-radius:0.25rem;
+        box-shadow: 1px 12px 5px -5px rgba(0,0,0,0.27);
+        margin: 1.8rem;
+        transition-property: width, height;
+        transition: 1s ease-in-out;
+        -webkit-border-radius:0.25rem;
+        -moz-border-radius:0.25rem;
+        -ms-border-radius:0.25rem;
+        -o-border-radius:0.25rem;
+}
+    .featured_img:hover {
+       width: 30%;
+}
+    .like-more {
+        width: 60%;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2em 0 4em;
+        /*border: blue 2px solid;*/
+    }
+    .like-more h2 {
+        font-size: 2rem;
+        font-family:'Abril Fatface', cursive;
+        font-weight: normal;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.125rem;
+        margin-top: 0;
+        color: #434369;
+        text-align: center;
+        
+    }
+
+    .like-more p {
+        font-size: 1.25rem;    
+        line-height: 1.8rem;
+        font-weight: 600;
+        color: #434369;
+        padding-bottom: 0.7em;
+        /*border: solid 2px peru;*/
+    }
+     
+/*--End SECTIUNEA 2--------------------------------------*/
+
+
+    /*poza background intermediara*/
+    .poza_background_intermediara {
+            background-image: url("imagini/artprint2.jpg");
+            background-repeat: no-repeat;
+            height: 400px;   
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background-size: cover;
+    } 
+   
+/*-----SECTIUNE 3-----------------------------------*/
+    
+    .section-3 {
+            background-color: #f5ebe7;
+            background-image: url(imagini/bandasup.png),
+                            url(imagini/bandainf.png);
+            background-position: top, bottom;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:space-around;
+            align-items: center;
+            padding: 150px 0px;
+            /*border: solid green 2px;*/
+    }    
+    .invitatie-shop {
+        width: 50%;
+        max-width: 18rem;
+        text-align: center;
+        align-self: center;
+        padding-left: 6em;
+        /*border: solid 2px blue;*/
+    }
+
+    .invitatie-shop h2 {
+        font-size: 2rem;
+        font-family:'Abril Fatface', cursive;
+        font-weight: normal;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.125rem;
+        margin-top: 0;
+        color: #434369;
+        text-align: center;
+        /*border: solid 2px peru;*/
+    }
+
+    .invitatie-shop p {
+        font-size: 1.25rem;    
+        line-height: 1.8rem;
+        font-weight: 600;
+        color: #434369;
+        padding-bottom: 0.7em;
+        /*border: solid 2px peru;*/
+    }
+
+    /*-----Start Slideshow container ----------------------------------*/
+
+    .slideshow-container {
+        max-width: 50%;
+        position: relative;
+        /*border: red solid 2px;*/
+    }
+  
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+  
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+  
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+  
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.068);
+        color: white;
+        text-decoration: none;
+    }
+  
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+  
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    /*-----Start Slideshow container ----------------------------------*/
+
+    /*-----End of Sectiune 3--------------------------*/
+
+    /*poza background intermediara 2*/
+    .poza_background_intermediara_2 {
+        background-image: url("imagini/paper-cut-fabrics.jpg");  
+        background-repeat: no-repeat;
+        height: 300px;   
+        background-position: center;
+        background-attachment: fixed;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-size: cover;
+    } 
+
+/*-----Sectiune 4--------------------------*/
+    .section-4 {
+        background-color: #f5ebe7;
+        background-image: url(imagini/bandasup.png),
+                        url(imagini/bandainf.png);
+        background-position: top, bottom;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        padding: 6rem 0;
+        
+    }
+  
+    .autoportret {
+        width: 30%;
+        max-width: 30rem;
+    }
+    .autoportret img {
+        width: 100%;
+    }
+    .text-about {
+        width: 50%;
+        max-width: 30rem;
+        text-align: left;
+    }
+    .text-about h2 {
+        font-size: 2rem;
+        font-family:'Abril Fatface', cursive;
+        font-weight: normal;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.125rem;
+        margin-top: 0;
+        color: #434369;
+        /*border: solid 2px peru;*/
+    }
+
+    .text-about p {
+        font-size: 1.25rem;    
+        line-height: 1.8rem;
+        font-weight: 600;
+        color: #434369;
+        padding-bottom: 0.7em;
+        /*border: solid 2px peru;*/
+    }
+    
+    .section-4 >img {
+        position: absolute;
+    }
+    .frunza1 {
+        top: 4300px;
+        left: 200px;
+    }
+    .frunza2 {
+      
+        top: 4610px;
+        left: 900px;
+    }
+    .frunza3 {
+      
+        top: 4300px;
+        right: 280px;
+    }
+
+/*-----End of Sectiune 4--------------------------*/
+
+/*poza background intermediara 3*/
+.poza_background_intermediara_3 {
+    background-image: url("imagini/Tropical2_seamless_checked.jpg");
+   
+    min-height: 300px;   
+   
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 100px;
+} 
+
+/*----------SECTIUNEA 5 (CONTACT FORM)---------------------------------------------*/
+
+
+.contact {
+    background-color: #f5ebe7;
+    background-image: url(imagini/bandasup.png),
+                        url(imagini/bandainf.png);
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    padding: 5rem 0 6rem;
+    /*border: solid red 2px;*/
+}
+.titlu-contact {    
+    width: 50%;
+    max-width: 400px;;
+     text-align: center;
+     /*border: solid 2px peru;*/
+     margin: 0 auto;
+     padding-bottom: .5em;
+ }
+
+ .titlu-contact h2{
+     font-size: 2rem;
+     font-family:'Abril Fatface', cursive;
+     font-weight: normal;
+     word-spacing: 0.3rem;
+     letter-spacing: 0.125rem;
+     color: #434369;
+     margin-top: 0;
+     /*border: solid 2px peru;*/
+ }
+.form-contact {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   max-width: 600px;
+   margin-right: auto;
+   margin-left: auto;
+
+}
+   .rand-email-tel {
+    display: flex;
+    justify-content:space-between;
+   }
+label {
+    color: #434369;
+}
+
+input[type="text"] {
+    background-color: white;
+    font-size: 1.125rem;
+    margin: 1rem;
+    border-radius: .312rem;
+    padding-left: 1rem;
+    height: 3.5rem;
+    border:#e8d4c5;
+    color: #434369;
+    -webkit-border-radius: .312rem;
+    -moz-border-radius: .312rem;
+    -ms-border-radius: .312rem;
+    -o-border-radius: .312rem;
+}
+input[type="text"]:focus, input[type="tel"]:focus,input[type="email"]:focus, textarea:focus {
+    outline: .4px #434369 solid;
+    color: #434369
+}
+
+input[type="text"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+    color: #999596;
+    font-family:'Montserrat', sans-serif;
+    font-size: .75rem;
+}
+input[type="tel"], input[type="email"] {
+    
+    height: 3.5rem;
+    background-color: white;
+    font-size: 1.125rem;
+    margin: 1rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+    border:#e8d4c5;
+    color: #434369;
+}
+textarea {
+    height: 12.5rem;
+    width: 34.5rem;
+    padding-top: 1.5rem;
+    background-color: white;
+    font-size: 1.125rem;
+    margin: 1rem;
+    border-radius: .312rem;
+    padding-left: 1em;
+    border:#e8d4c5;
+    color: #434369;
+    -webkit-border-radius: .312rem;
+    -moz-border-radius: .312rem;
+    -ms-border-radius: .312rem;
+    -o-border-radius: .312rem;
+}
+input[type="submit"] {
+    background-color: #df6f71;
+    border: none;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-top: 1.25rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: .312rem;
+    padding: 1.25rem 1.875rem;
+    color: white;
+    -webkit-border-radius: .312rem;
+    -moz-border-radius: .312rem;
+    -ms-border-radius: .312rem;
+    -o-border-radius: .312rem;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #fcdcdc, #df6f71);
+    color: #434369;
+}
+.rand-submit {
+    text-align: center;
+}
+
+#section-5 >img {
+    position: absolute;
+}
+.frunza1a {
+    top: 5780px;
+    right: 330px;
+}
+.frunza2a {
+    top: 5900px;
+    left: 500px;
+}
+.frunza3a {
+    top: 5700px;
+    left: 270px;
+}
+.frunza1b {
+    top: 5450px;
+    left: 400px;
+}
+.frunza2b {
+    top: 5450px;
+    right: 320px;
+}
+.frunza3b {
+    top: 5500px;
+    right: 680px;
+}
+
+/*-------END SECTIUNEA 5---------------------------------------------*/
+
+/*poza background intermediara 4*/
+.poza_background_intermediara_4 {
+    background-image: url("imagini/Fabric2.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-size: cover;
+} 
+
+/*-----Start of Footer----------------------------------------------------*/
+ 
+footer {
+    background-color: #fadcd0;
+    padding: 1rem 0;
+}
+.bottom-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo_2 {
+    width: 10rem;
+    margin: 0;
+}
+.social-media {
+    margin: .5rem;
+    padding: 0;
+}
+.social-media li {
+    list-style: none;
+    display: inline-block;
+}
+.social-media li a {
+    color: white;
+}
+.fa {
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    width: 3rem;
+    text-align: center;
+    text-decoration: none;
+    margin: .3rem .125rem;
+    border-radius: 1rem;
+    background: #f5969c;
+    color: white;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+footer p {
+    font-size: 1.25rem;    
+    font-weight: 600;
+    color: #434369;
+    margin: 0;
+}
+
+/*-----End of Footer----------------------------------------------------*/
+
+
+
+
+
+@media (max-width:1870px) {
+    .frunza1, .frunza2, .frunza3, .frunza1a, .frunza2a, .frunza3a, .frunza1b,.frunza2b, .frunza3b{
+    visibility: hidden;
+    }
+
+
+}
+
+
+
+
+
+

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Patterns</title>
+        <meta name="description" content="latest patterns">
+        
+        <link rel="stylesheet" href="">
+        <!--fonturi:------------------------------------------------------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            html, body {
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Montserrat', sans-serif; 
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 83%;
+                max-width: 1600px;
+                margin-left: auto;
+                margin-right: auto;
+                /*border: solid 2px red;*/
+            }
+            
+            /* -----Header: Nav bar & Logo ----*/
+    header {
+        background-color: #fadcd0;
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        font-size: 1.3rem;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        width: 10rem;
+        margin-left: 2.5rem;
+        margin-top: .25rem;
+    }
+    .top-nav {
+        display: flex
+    }
+    .top-nav li {
+        list-style-type: none; 
+    }
+    .top-nav li {
+        margin-right: 2.5rem;
+    }
+   
+    .submenu {
+        position:absolute;
+        display: none;
+    }
+    .portfolio-item {
+        cursor: pointer;
+        color: #434369;
+    }
+    .portfolio-item:hover >.submenu {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items:flex-start;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .submenu-item {
+       margin: .5rem 0;
+       background-color: #fadcd0d5;
+       padding: .31rem 1rem;
+       border-radius: 10%;
+}
+    .submenu li:first-child {
+       margin-top: 1.562rem;
+       margin-bottom: .12rem;
+    }
+    .submenu li:last-child {
+        margin-top: .18rem;
+    }
+    a:link {
+        text-decoration: none;
+        color: #434369;
+    }
+
+    a:visited {
+        color:#76b3ab;
+    }
+
+    a:hover {
+        color:#df6f71;
+        text-decoration: underline;
+    }
+    
+
+    /* --End of Header: Nav bar & Logo --*/
+
+            /*poza background intermediara 1*/
+            .bckgr-img {
+                background-color: rgba(255, 255, 255, 0.349);
+                background-image: url("imagini/fotoliu-ocru5.jpg");
+                background-blend-mode:overlay;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                padding-top: 5rem;
+            }
+            .text_patterns {
+                width: 40%;
+                max-width: 500px;
+                background-color: #fadcd0dc;
+                margin: 0 auto;
+                border-radius: .5rem; 
+                text-align: center;
+                padding: 2.5em .75em 2em;
+                /*border: solid red 2px;*/
+               
+            }
+            .text_patterns h2 {
+                font-size: 2rem;
+                font-family:'Abril Fatface', cursive;
+                font-weight: normal;
+                word-spacing: 0.3rem;
+                letter-spacing: 0.125rem;
+                margin-top: 0;
+                color: #434369;
+               
+                /*border: solid 2px peru;*/
+            }
+
+            .text_patterns p {
+                font-size: 1.25rem;    
+                line-height: 1.8rem;
+                font-weight: 600;
+                color: #434369;
+                /*border: solid 2px peru;*/
+            }
+           
+            .poze {
+               
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3rem;
+                justify-content: space-evenly;
+              
+                margin-right: auto;
+                margin-left: auto;
+                padding: 5rem 2rem;
+                /*border: solid 2px blue;*/
+                
+            }
+           .gal {
+               width: 100%;
+               border-radius: 0.25rem;
+               /*border: solid .6rem rgba(255, 255, 255, 0.966);*/
+               box-shadow: 1px 12px 5px -5px rgba(0,0,0,0.27);
+               transition-property: width;
+               transition: .6s ease-in-out;
+           }
+           .gal:hover {
+                width: 120%;
+                cursor: pointer;
+                
+           }
+
+           /*-----Start of Footer----------------------------------------------------*/
+ 
+footer {
+    background-color: #fadcd0;
+    padding: 1rem 0;
+}
+.bottom-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo_2 {
+    width: 10rem;
+    margin: 0;
+}
+.social-media {
+    margin: .5rem;
+    padding: 0;
+}
+.social-media li {
+    list-style: none;
+    display: inline-block;
+}
+.social-media li a {
+    color: white;
+}
+.fa {
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    width: 3rem;
+    text-align: center;
+    text-decoration: none;
+    margin: .3rem .125rem;
+    border-radius: 1rem;
+    background: #f5969c;
+    color: white;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+footer p {
+    font-size: 1.25rem;    
+    font-weight: 600;
+    color: #434369;
+    margin: 0;
+}
+
+/*-----End of Footer----------------------------------------------------*/
+       
+
+
+
+
+        </style>
+    </head>
+    
+    <body>
+     <!--Logo & Navigation bar-------------------------------------------------------->
+     <header class="container row">
+        <a href="index.html"><img class="logo" src="logo.svg"></a>
+      
+        <nav>
+            <ul class="top-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="portfolio-item"><a href="portofoliu.html">Portfolio</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="patterns.html">Patterns</a></li>
+                            <li class="submenu-item"><a href="illustrations.html">Illustrations</a></li>
+                        </ul>
+                </li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="index.html #section-4">About</a></li>
+                <li><a href="index.html #section-5">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--END Logo & Navigation bar------------------------------------------------------>
+    <!--SECTIUNEA 1 ---------------------------------------------------------------------->
+    <section class="container">
+        <div class="bckgr-img">
+
+           <div class="galerie">
+
+                <div class="text_patterns">
+                    <h2>Patterns</h2>
+                    <p>Please find bellow my latest surface pattern designs and see how they look on some home decor and fashion items:</p>
+                </div>
+
+                <div class="poze">
+                    <a href="card-pattern-1.html"><img class="gal" src="imagini/pattern_1.jpg" alt=""></a>
+                    <a href="card-pattern-2.html"><img class="gal" src="imagini/pattern_2.jpg" alt=""></a>
+                    <a href="card-pattern-3.html"><img class="gal" src="imagini/pattern_3.jpg" alt=""></a>
+                    <a href="card-pattern-4.html"><img class="gal" src="imagini/pattern_4.jpg" alt=""></a>
+                    <a href="card-pattern-5.html"><img class="gal" src="imagini/pattern_5.jpg" alt=""></a>
+                    <a href="card-pattern-6.html"><img class="gal" src="imagini/pattern_6.jpg" alt=""></a>
+                    <a href="card-pattern-7.html"><img class="gal" src="imagini/pattern_7.jpg" alt=""></a>
+                    <a href="card-pattern-8.html"><img class="gal" src="imagini/pattern_8.jpg" alt=""></a>
+                    <a href="card-pattern-9.html"><img class="gal" src="imagini/pattern_9.jpg" alt=""></a>
+                    <a href="card-pattern-10.html"><img class="gal" src="imagini/pattern_10.jpg" alt=""></a>
+                    <a href="card-pattern-11.html"><img class="gal" src="imagini/pattern_11.jpg" alt=""></a>
+                    <a href="card-pattern-12.html"><img class="gal" src="imagini/pattern_12.jpg" alt=""></a>
+                    <a href="card-pattern-13.html"><img class="gal" src="imagini/pattern_13.jpg" alt=""></a>
+                    <a href="card-pattern-14.html"><img class="gal" src="imagini/pattern_14.jpg" alt=""></a>
+                    <a href="card-pattern-15.html"><img class="gal" src="imagini/pattern_15.jpg" alt=""></a>
+                </div>
+            </div>
+
+
+           
+
+
+
+
+        </div>
+    </section>
+    <!-- END SECTIUNEA 1 ------------------------------------------------------------>
+
+     <!--Start of Footer-------------------------------------------------------------->
+     <footer class="container">
+        <div class="bottom-nav">
+            <a href="index.html"><img class="logo_2" src="logo.svg"></a>
+            <p>Follow me:</p>
+            <ul class="social-media">
+                <li><a href="https://www.instagram.com/dorademe/" class="fa fa-instagram"></a></li>
+                <li><a href="https://ro.pinterest.com/teodorademe" class="fa fa-pinterest"></a></li>
+                <li><a href="https://www.facebook.com/deme.teodora" class="fa fa-facebook"></a></li> 
+            </ul>
+            <p class="copyright">COPYRIGHT &copy;  2021 Dora Deme Design</p>
+        </div>
+</footer>
+<!--End of Footer----------------------------------------------------------------->
+    </body>
+</html>

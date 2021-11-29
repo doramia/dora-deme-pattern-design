@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+        <meta name="description" content="patterns and illustrations">
+        
+        <!--fonturi:----------------------------------------------------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+
+            /* ---pt footer ca sa stea fixat in josul paginii, fiindca continutul paginii e prea scurt: */
+            html {
+                height: 100%;
+            }
+
+            body {
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            /*-------------------------------------------------------------------------------------------*/
+
+            html, body {
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Montserrat', sans-serif; 
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 83%;
+                max-width: 1600px;
+                margin-left: auto;
+                margin-right: auto;
+                /*border: solid 2px red;*/
+            }
+            
+            /* -----Header: Nav bar & Logo ----*/
+    header {
+        background-color: #fadcd0;
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        font-size: 1.3rem;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        width: 10rem;
+        margin-left: 2.5rem;
+        margin-top: .25rem;
+    }
+    .top-nav {
+        display: flex
+    }
+    .top-nav li {
+        list-style-type: none; 
+    }
+    .top-nav li {
+        margin-right: 2.5rem;
+    }
+   
+    .submenu {
+        position:absolute;
+        display: none;
+    }
+    .portfolio-item {
+        cursor: pointer;
+        color: #434369;
+    }
+    .portfolio-item:hover >.submenu {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items:flex-start;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .submenu-item {
+       margin: .5rem 0;
+       background-color: #fadcd0d5;
+       padding: .31rem 1rem;
+       border-radius: 10%;
+}
+    .submenu li:first-child {
+       margin-top: 1.562rem;
+       margin-bottom: .12rem;
+    }
+    .submenu li:last-child {
+        margin-top: .18rem;
+    }
+    a:link {
+        text-decoration: none;
+        color: #434369;
+    }
+
+    a:visited {
+        color:#76b3ab;
+    }
+
+    a:hover {
+        color:#df6f71;
+        text-decoration: underline;
+    }
+    
+
+    /* --End of Header: Nav bar & Logo --*/
+
+            .centru {
+                background-color: #f4f5f3;
+                /*border: solid 3px rgb(204, 243, 132);*/
+            }
+            .categorii { 
+                width: 60%;
+                max-width: 1300px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 4rem;
+                padding: 4rem 0;
+                /*border: solid 2px rgb(100, 6, 109);*/
+            }
+            .categ_illustrations {
+                text-align: center;
+                width: 40%;
+                max-width: 550px;
+                border: 1px solid rgba(216, 213, 213, 0.589);
+                border-radius: 0.4rem;
+                padding: 3em 0 4em;
+                box-shadow: 0px 10px 13px -7px #d8d5d5;
+            }
+            
+
+            .categ_patterns {
+                text-align: center;
+                width: 40%;
+                max-width: 550px;
+                border: 1px solid rgba(216, 213, 213, 0.589);
+                border-radius: 0.4rem;
+                padding: 3em 0 4em;
+                box-shadow: 0px 10px 13px -7px #d8d5d5; 
+            }
+            .categ_illustrations h2{
+                
+                font-size: 2vw;
+                font-family:'Abril Fatface', cursive;
+                font-weight:normal;
+                word-spacing: 0.3rem;
+                letter-spacing: 0.125rem;
+                color: #434369;
+                margin-top: 0;
+                /*border: solid 2px peru;*/
+            }
+            .categ_patterns h2 {
+                
+                font-size: 2vw;
+                font-family:'Abril Fatface', cursive;
+                font-weight: normal;
+                word-spacing: 0.3rem;
+                letter-spacing: 0.125rem;
+                color: #434369;
+                margin-top: 0;
+                /*border: solid 2px peru;*/
+            }
+
+            .categ_illustrations img {
+                border-radius: 50%;
+                width: 80%;
+            }
+            
+            .categ_patterns img {
+                border-radius: 50%;
+                width: 80%;
+            }
+            
+            /*-----Start of Footer----------------------------------------------------*/
+ 
+            footer {
+                background-color: #fadcd0;
+                padding: 1rem 0;
+                /* ---pt footer ca sa stea fixat in josul paginii, fiindca continutul paginii e prea scurt: */
+                margin-top: auto;
+                /*-----------------------------------------------------------------------------------------*/
+            }
+
+            .bottom-nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .logo_2 {
+                width: 10rem;
+                margin: 0;
+            }
+            .social-media {
+                margin: .5rem;
+                padding: 0;
+            }
+            .social-media li {
+                list-style: none;
+                display: inline-block;
+            }
+            .social-media li a {
+                color: white;
+            }
+            .fa {
+                padding: 1.25rem;
+                font-size: 1.5rem;
+                width: 3rem;
+                text-align: center;
+                text-decoration: none;
+                margin: .3rem .125rem;
+                border-radius: 1rem;
+                background: #f5969c;
+                color: white;
+                -webkit-border-radius: 1rem;
+                -moz-border-radius: 1rem;
+                -ms-border-radius: 1rem;
+                -o-border-radius: 1rem;
+            }
+            .fa:hover {
+                opacity: 0.7;
+                text-decoration: none;
+            }
+            footer p {
+                font-size: 1.25rem;    
+                font-weight: 600;
+                color: #434369;
+                margin: 0;
+            }
+
+            /*-----End of Footer----------------------------------------------------*/
+                 
+        </style>
+    </head>
+    
+    <body>
+        <!--Logo & Navigation bar-------------------------------------------------------->
+        <header class="container row">
+            <a href="index.html"><img class="logo" src="logo.svg"></a>
+          
+            <nav>
+                <ul class="top-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="portfolio-item"><a href="portofoliu.html">Portfolio</a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="patterns.html">Patterns</a></li>
+                                <li class="submenu-item"><a href="illustrations.html">Illustrations</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="index.html #section-4">About</a></li>
+                    <li><a href="index.html #section-5">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--END Logo & Navigation bar------------------------------------------------------>
+
+
+        <section class="container centru">
+
+            <div class="categorii">
+
+                <div class="categ_patterns">
+                    
+                        <h2>Patterns</h2>
+                        <a class="link" href="patterns.html"><img src="imagini/rotund_patterns.jpg"></a>    
+
+                </div>
+
+
+                <div class="categ_illustrations">
+       
+                        <h2>Illustrations</h2>
+                        <a class="link" href="illustrations.html"><img src="imagini/rotund_illustrations.jpg"></a>
+                    
+
+                </div>
+            
+            </div>
+            
+        </section>
+
+       <!--Start of Footer-------------------------------------------------------------->
+       <footer class="container">
+        <div class="bottom-nav">
+            <a href="index.html"><img class="logo_2" src="logo.svg"></a>
+            <p>Follow me:</p>
+            <ul class="social-media">
+                <li><a href="https://www.instagram.com/dorademe/" class="fa fa-instagram"></a></li>
+                <li><a href="https://ro.pinterest.com/teodorademe" class="fa fa-pinterest"></a></li>
+                <li><a href="https://www.facebook.com/deme.teodora" class="fa fa-facebook"></a></li> 
+            </ul>
+            <p class="copyright">COPYRIGHT &copy;  2021 Dora Deme Design</p>
+        </div>
+</footer>
+<!--End of Footer----------------------------------------------------------------->
+
+
+
+    </body>
+</html>
